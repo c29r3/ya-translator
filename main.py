@@ -6,12 +6,12 @@ import requests
 from pynput import keyboard
 from requests import RequestException, HTTPError
 
-import config_example
+import config
 
-hot_key = config_example.hot_key
-notify_expire = config_example.notify_expire_seconds * 1000
+hot_key = config.hot_key
+notify_expire = config.notify_expire_seconds * 1000
 print(hot_key)
-api_key = config_example.api_key
+api_key = config.api_key
 detect_lang_url = 'https://translate.yandex.net/api/v1.5/tr.json/detect'
 translate_url = 'https://translate.yandex.net/api/v1.5/tr.json/translate'
 
